@@ -69,7 +69,7 @@ def main():
         if st.button("Run Model"):
             with st.spinner("Processing"):
                 r = requests.post(
-                    "https://jtc-diabetes-classifier.azurewebsites.net/single_prediction",
+                    "https://king-prawn-app-2-y4ac7.ondigitalocean.app/single_prediction",
                     json=json_payload_as_dict,
                 )
                 if r.status_code == 200:
